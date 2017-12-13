@@ -24,7 +24,7 @@
             <div class='info-left'>
                 <div class='introduction' style='height=240; width=100%;'>
                     <h2 class='head-tag'>Introduction</h2>
-                    <p style='font-style: italic; font-size=20px;'>Our goal is to design and implement a video facial distortion program for entertainment purpose. The program would take in a recorded and/or live video feed as input. From the input video, the desired output will be our program would detect and track any face(s) throughout the image sequence. If the video presents multiple faces, the program would choose one face and apply certain facial distortions. If the initial chosen face is covered or disappears from the video frame, the program would re-apply facial distortion to the second target. Our idea is inspired by two smartphone applications, DouYin and Musical.ly; these two applications provide similar features as our proposed program. However, based on our preliminary test on these apps, we believe we can build a program to provide a similar or even better user experience through better facial detection and the inclusion of feature tracking algorithms. 
+                    <p class='list-element'>Our goal is to design and implement a video facial distortion program for entertainment purpose. The program would take in a recorded and/or live video feed as input. From the input video, the desired output will be our program would detect and track any face(s) throughout the image sequence. If the video presents multiple faces, the program would choose one face and apply certain facial distortions. If the initial chosen face is covered or disappears from the video frame, the program would re-apply facial distortion to the second target. Our idea is inspired by two smartphone applications, DouYin and Musical.ly; these two applications provide similar features as our proposed program. However, based on our preliminary test on these apps, we believe we can build a program to provide a similar or even better user experience through better facial detection and the inclusion of feature tracking algorithms. 
                     </p>
                 </div>
 
@@ -33,7 +33,7 @@
                     <h2 class='head-tag'>Distortion Sample</h2>
                     <div>
                         <img src='./images/distortion_sample.png' alt='distortion_sample' style='float:left; width:49%; height=100%'>
-                        <dd style='float:left; width=49%; height=100%; font-style: italic;'>Distortion method: Sphere</dd>
+                        <dd style='float:left; width=49%; height=100%; font-style: italic; font-family:Verdana, Geneva, sans-serif'>Distortion method: Sphere</dd>
                     </div>
                 </div>
             </div>
@@ -41,7 +41,7 @@
             <!-- right info-container -->
             <div class='info-right'>
                 <h2 class='head-tag'>Design Structure</h2>
-                <div class='design' style='margin-right=5px; font-style: italic;'>
+                <div class='design' style='margin-right=5px; font-style: italic; font-family:Verdana, Geneva, sans-serif'>
                     <li>Selection a detected facial area as region of Interest (ROI).</li>
                     <li>Selected ROI is tracked from frame to frame.</li>
                     <li>If selected ROI is lost, a new ROI is selected.</li>

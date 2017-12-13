@@ -41,7 +41,7 @@ body {
     font-size: 30px;
     font-width: bold;
     font-family: "Comic Sans MS", cursive, sans-serif;
-
+    padding-left: 20px;
 }
 
 .nav-bar {
@@ -111,6 +111,16 @@ body {
 	width:49%;
     height:100%;
 }
+.design li {
+	margin-left: 5px;
+}
+
+.list-element {
+    font-style: italic; 
+    font-family:Verdana, Geneva, sans-serif;
+}
+
+/* header */
 .head-tag {
     font-family: "Comic Sans MS", cursive, sans-serif;
     -webkit-margin-before: 0.67em;
@@ -122,11 +132,13 @@ body {
 	border-color:black;
 }
 
-.design li {
-	margin-left: 5px;
-}
-
-.list-element {
-    font-style: italic; 
-    font-size=20px;    
+h3 {
+    font-family: "Lucida Console", Monaco, monospace;
+    font-style: italic;
+    -webkit-margin-before: 0.67em;
+    -webkit-margin-after: 0.67em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: 900;
+	
 }

@@ -23,32 +23,111 @@
             <div class='info-left'>
                 <div id = "running-environment">
                     <h2 class='head-tag'>Running Environment</h2>
-                    <li class='list-element'> Ubuntu 16.04 </li>
-                    <li class='list-element'> Python 2.7 </li>
-                    <li class='list-element'> Opencv 2.4.* (Under Ubuntu 16.04, some Opencv3 functions may not work.) </li>
-                    <li class='list-element'> dlib </li>
-                    <li class='list-element'> Pyqt5 </li>
+                    <dd style='padding-right:10px'>
+                        <li class='list-element'> Ubuntu 16.04 </li>
+                        <li class='list-element'> Python 2.7 </li>
+                        <li class='list-element'> Opencv 2.4.* (Under Ubuntu 16.04, some Opencv3 functions may not work.) </li>
+                        <li class='list-element'> dlib </li>
+                        <li class='list-element'> Pyqt5 </li>
+                    </dd>
                 </div>
 
                 <br><br>
 
-                <div id = 'python-libraries'>
+                <div id='python-libraries'>
                     <h2 class='head-tag'>Python Libraries</h2>
-                    <li class='list-element'> Opencv2 </li>
-                    <li class='list-element'> dlib </li>
-                    <li class='list-element'> numpy </li>
-                    <li class='list-element'> scipy </li>
-                    <li class='list-element'> wheel </li>
-                    <li class='list-element'> scikit-image </li>
+                    <dd style='padding-right:10px'>
+                        <li class='list-element'> Opencv2 </li>
+                        <li class='list-element'> dlib </li>
+                        <li class='list-element'> numpy </li>
+                        <li class='list-element'> scipy </li>
+                        <li class='list-element'> wheel </li>
+                        <li class='list-element'> scikit-image </li>
+                    </dd>
                 </div>
+
+                <br><br>
+
+                <div id='download-code'>
+                    <h2 class='head-tag'>Download Code</h2>
+                    <dd style='padding-right:10px'>
+                        <li class='list-element'> $ git clone https://github.com/RandallDW/video_face_distortion </li>
+                    </dd>
+                </div>
+
+                <br><br>
+                <div id='package-installation'>
+                    <h2 class='head-tag'>Package Installation</h2>
+                        <dl style='font-family:Verdana, Geneva, sans-serif'>Before installaltion, please make sure you have python-pip installed.</dl>
+                    <div style='background-color:#F5F5F1; font-family:Verdana, Geneva, sans-serif'>
+                        Install python-pip
+                            <dd style='padding-top:5px; font-style:italic; padding-bottom:3px;'> 
+                                <li style='padding-right:10px; font-style:italic'> sudo apt-get install python-pip </li> 
+                            </dd>
+                    </div>
+
+                    <br>
+
+                    <h3>Dlib pre-required packages installation</h3>
+                    <div style='background-color:#F5F5F1; font-family:Verdana, Geneva, sans-serif; overflow-x: auto;'>
+                        <dd style='padding-right:10px; font-family:Verdana, Geneva, sans-serif'>
+                            <li class='list-element'> 
+                                setuptools 
+                                <dd style='padding-top:5px; font-style:italic; padding-bottom:3px;'> 
+                                   - $ pip install setuptools
+                                </dd>
+                            </li>
+                            <li class='list-element'> 
+                                cmake
+                                <dd style='padding-top:5px; font-style:italic; padding-bottom:3px;'> 
+                                   - $ sudo apt-get install cmake
+                                </dd>
+                            </li>
+                            <li class='list-element'> 
+                                openblas
+                                <dd style='padding-top:5px; font-style:italic; padding-bottom:1px;'>
+                                    <span style='white-space:pre'>- $ git clone https://github.com/xianyi/OpenBLAS.git</span>
+                                </dd>
+                                <dd style='padding-top:5px; font-style:italic; padding-bottom:1px;'> - $ cd OPenBLAS</dd>
+                                <dd style='padding-top:5px; font-style:italic; padding-bottom:1px;'> - $ make; sudo make install</dd>
+                                <dd style='padding-top:5px; font-style:italic; padding-bottom:1px;'> - $ sudo apt-get install libopenblas-dev</dd>
+                            </li>
+                            <li class='list-element'> 
+                                boost
+                                <dd style='padding-top:5px; font-style:italic; padding-bottom:1px;'> 
+                                    <span style='white-space:pre'> - $ wget https://dl.bintray.com/boostorg/release/1.65.1/source/boost_1_65_1.tar.gz</span>
+                                </dd>
+                                <dd style='padding-top:5px; font-style:italic; padding-bottom:1px;'> 
+                                    <span style='white-space:pre'>      (Or go to boost.org manually download)</span> 
+                                </dd>
+                                <dd style='padding-top:5px; font-style:italic; padding-bottom:1px;'> - $ tar -xzf boost_1_65_1.tar.gz</dd>
+                                <dd style='padding-top:5px; font-style:italic; padding-bottom:1px;'> - $ cd boost_1_65_1</dd>
+                                <dd style='padding-top:5px; font-style:italic; padding-bottom:1px;'> - $ ./booststrap.sh --with-libraries=python</dd>
+                                <dd style='padding-top:5px; font-style:italic; padding-bottom:1px;'> - $ ./b2</dd>
+                                <dd style='padding-top:5px; font-style:italic; padding-bottom:1px;'> - $ sudo ./b2 install</dd>
+                                <dd style='padding-top:5px; font-style:italic; padding-bottom:1px;'> - $ sudo apt-get install libboost-all-dev</dd>
+                            </li>
+                            
+                        </dd>
+                    </div>
+
+                    <h3>Install dlib</h3>
+                    <div style='border: solid #CACAC4'>
+                        <dd style='padding-right:10px'>
+                            <li class='list-element'> dlib </li>
+                        </dd>
+                    </div>
+
+                </div>
+
             </div>
 
             <!--  right half -->
             <div class='info-right'>
                 <div id='source-code'>
                     <h2 class='head-tag'>Source Code</h2>
-                    <dd class='list-element'>
-                        If you are interested in our project, you can get source code from
+                    <dd class='list-element' style='padding-right:10px'>
+                        If you are interested in our project, you can get source code with command instruction on the left side, or manually download from
                         <a href="https://github.com/RandallDW/video_face_distortion">here</a>
                         .
                     </dd>
