@@ -2,9 +2,9 @@ html {
     font-family: sans-serif;
     width: 99%;
     height: 100%;
-    margin-left: 5px;
-    margin-right: 5px;
-    verflow-x: hidden;
+    margin-left: 0px;
+    margin-right: 0px;
+    /*overflow-x: hidden;*/
 
     -webkit-text-size-adjust: 100%;
         -ms-text-size-adjust: 100%;
@@ -13,6 +13,7 @@ html {
 body {
     width: 100%;
     height: 100%;
+    margin-top: 0px;
     margin-left: 0px;
     margin-right: 0px;
     background-color: white;
@@ -28,25 +29,34 @@ body {
     color: white;
     width: 100%;
     margin-top: 0px;
-    margin-left: 5px;
+    margin-left: 0px;
+    padding-right: 25px;
     margin-right: 25px;
     font-size: 25px;
     font-family: "Comic Sans MS", cursive, sans-serif;
 	display: block;
-    position: relative;
+    position: fixed;
+    overflow: scroll;
 }
 .project_name {
     color: white;
     width: 30%;
-    font-size: 30px;
     font-width: bold;
     font-family: "Comic Sans MS", cursive, sans-serif;
     padding-left: 20px;
+
+    font-size: 30px;
+    margin-top:0px;
+    margin-bottom:auto;
+    text-align: center;
+    overflow: scroll;
+
 }
 
 .nav-bar {
     height: 100%;
     margin-top:0px;
+    margin-bottom:auto;
     float:right;
     list-style:none;
     display: flex;
@@ -87,15 +97,16 @@ body {
 
 /* introduction */
 .info {
-/*	padding-top: 45px;  */
-    margin-left: 10px;
+	padding-top: 45px;  
+    padding-right: 20px;
+    margin-left: 20px;
     margin-top: 0px;
-    margin-right: 10px;
-	width:100%;
+    margin-right: 20px;
+	width:99%;
     height:100%;
 }
 .info-left {
-    margin-top: 20px;
+    margin-top: 0px;
 	margin-left: 0px;
 	margin-right: 0px;
 	float:left;
@@ -140,5 +151,4 @@ h3 {
     -webkit-margin-start: 0px;
     -webkit-margin-end: 0px;
     font-weight: 900;
-	
 }
