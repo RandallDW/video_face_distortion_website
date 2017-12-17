@@ -45,11 +45,25 @@
 				<br><br>
                 <h2 class='head-tag'>Approach</h2>
                 <div class='design' style='margin-right=5px; font-style: italic; font-family:Verdana, Geneva, sans-serif'>
-                    <li>Selection a detected facial area as region of Interest (ROI).</li>
-                    <li>Selected ROI is tracked from frame to frame.</li>
-                    <li>If selected ROI is lost, a new ROI is selected.</li>
+					<dd>
+						<li>Selection a detected facial area as region of Interest (ROI).</li>
+						<li>Selected ROI is tracked from frame to frame.</li>
+						<li>If selected ROI is lost, a new ROI is selected.</li>
+					</dd>
                     <img src="./images/design_structure.png" style="float:right; width:100%;" alt="data structure">
                 </div>
+
+				<br><br>
+                <h2 class='head-tag'>Qualitative Results</h2>
+				<p class='list-element'>
+				Due to the nature of our project, it is hard to define and assess our results qualitatively. There is no real quality metrics for facial distortions other than personal preferences. The quality of facial detection is mainly based upon the imported library module (OpenCV) and our self-implemented image mask. A comparison of facial detection quality between different library modules would have no real relevance to our project and therefore is not included in our report.
+				</p>
+
+				<br><br>
+                <h2 class='head-tag'>Conclusion and Future Work</h2>
+				<p class='list-element'>
+				Our goal is to design and implement a video facial distortion program for entertainment purpose. From our demo, we showed that our implementation can successfully identified human faces and distorted them according to the filters selected.  Therefore, we have achieved our expectation. However, our design is far from perfect. There are many areas where we can improve; the first one is to have a  better facial detection algorithm.  In our current setup,  the human face is tracked and presented as a bounding box. To better detect actual facial region, we also implemented a mask that will better represent the curvature of a human facial region.  However, this technique is not efficient in all scenarios; people does not have the same facial shape. Our facial detection also suffers when user are not facing the camera directly; if a person is turning away from the camera, our current facial detection sometimes cannot track consistently. User experience can also need improvement. We can add additional “fun” features such as replacing user’s face with another face. Last, our current setup has no sound features, which also also be added in future works. 
+				</p>
             </div>
 
             <!-- right info-container -->
